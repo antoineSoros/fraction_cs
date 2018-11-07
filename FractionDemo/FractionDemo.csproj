@@ -50,6 +50,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Centieme.cs" />
+    <Compile Include="FractionException.cs" />
     <Compile Include="NumBox.cs">
       <SubType>Component</SubType>
     </Compile>

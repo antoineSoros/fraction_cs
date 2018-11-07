@@ -35,9 +35,10 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.numBox2 = new FractionDemo.NumBox();
-            this.buttonLoupe1 = new FractionDemo.ButtonLoupe();
             this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.buttonLoupe1 = new FractionDemo.ButtonLoupe();
+            this.numBox2 = new FractionDemo.NumBox();
             this.SuspendLayout();
             // 
             // button1
@@ -92,7 +93,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(437, 112);
+            this.button6.Location = new System.Drawing.Point(362, 112);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 5;
@@ -107,14 +108,25 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 7;
             // 
-            // numBox2
+            // button7
             // 
-            this.numBox2.Location = new System.Drawing.Point(406, 30);
-            this.numBox2.Maxi = 100D;
-            this.numBox2.Mini = 0D;
-            this.numBox2.Name = "numBox2";
-            this.numBox2.Size = new System.Drawing.Size(100, 20);
-            this.numBox2.TabIndex = 8;
+            this.button7.Location = new System.Drawing.Point(549, 216);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 10;
+            this.button7.Text = "button7";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(548, 334);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(213, 83);
+            this.button8.TabIndex = 11;
+            this.button8.Text = "test exception";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // buttonLoupe1
             // 
@@ -126,21 +138,21 @@
             this.buttonLoupe1.Text = "buttonLoupe1";
             this.buttonLoupe1.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // numBox2
             // 
-            this.button7.Location = new System.Drawing.Point(549, 216);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 10;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.numBox2.Location = new System.Drawing.Point(353, 29);
+            this.numBox2.Maxi = 100D;
+            this.numBox2.Mini = 0D;
+            this.numBox2.Name = "numBox2";
+            this.numBox2.Size = new System.Drawing.Size(100, 20);
+            this.numBox2.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.buttonLoupe1);
             this.Controls.Add(this.numBox2);
@@ -171,6 +183,7 @@
         private NumBox numBox2;
         private ButtonLoupe buttonLoupe1;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }
 

@@ -114,10 +114,32 @@ namespace FractionDemo
            MessageBox.Show( cent.toText());
             MessageBox.Show(cent.ToString());
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Fraction fraction = new Fraction(3, 0);
+                MessageBox.Show("ok");
+                MessageBox.Show(fraction.toText());
+            }
+            catch (FractionException ex)
+            {
+                MessageBox.Show(ex.Message);
+               
+            }
+            catch(Exception ex)
+            {
+               
+            }
+        }
+        
+	    
     }
+}
 
       
 
         
     
-}
+

@@ -25,6 +25,8 @@ namespace FractionDemo
                     {
                         isInteger(this, new EventArgs());
                     }
+                   
+                    
                 }
 
             }
@@ -38,13 +40,21 @@ namespace FractionDemo
 
             set
             {
+              
                 _denominateur = value;
+
+                if (denominateur == 0)
+                {
+                    throw new FractionException();
+                }
+
                 if (isInteger != null)
                 {
                     if (numerateur % denominateur == 0)
                     {
                         isInteger(this, new EventArgs());
                     }
+                  
                 }
             }
         }
